@@ -10,58 +10,63 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<h1 class="header-title">WA信息仿真决策支持系统</h1>
-		</div>
-		<div class="wrapper">
-			<div class="content">
-				<div class="col col-l">
-					<div class="xpanel-wrapper xpanel-wrapper-40">
-						<div class="xpanel xpanel-l-t">
-							<div class="title">"社会雷达"感知数据源</div>
-							<div>242141条</div>
-						</div>
-					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-60">
-						<div class="xpanel xpanel-l-b">
-							<div class="title">涉政信息</div>
-						</div>
-					</div>
-				</div>
-				<div class="col col-c">
-					<div class="xpanel-wrapper xpanel-wrapper-70">
-						<div class="xpanel no-bg" style="padding-top: 20px;">
-							<div class="title title-long">事件传播可视化展示</div>
-							<div id="seriesGraph" style="height: 100%"></div>
-						</div>
-					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-30">
-						<div class="xpanel xpanel-c-b">
-							<div class="title title-long">事件发展趋势图</div>
-							<div id="lineChart" style="height: 100%"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col col-r">
-					<div class="xpanel-wrapper xpanel-wrapper-25">
-						<div class="xpanel xpanel-r-t">
-							<div class="title">WA信息关键词云</div>
-						</div>
-					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-30">
-						<div class="xpanel xpanel-r-m">
-							<div class="title">事件影响力趋势图</div>
-							<div id="barChart" style="height: 100%"></div>
-						</div>
-					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-45">
-						<div class="xpanel xpanel-r-b">
-							<div class="title">事件干预效果图</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div id="datav-loading">
+      <a target="_blank" href="javascript:;">
+        <img src="img/loading.gif">
+      </a>
+    </div>
+    <div class="header">
+      <h1 class="header-title">WA信息仿真决策支持系统</h1>
+    </div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="col col-l">
+          <div class="xpanel-wrapper xpanel-wrapper-40">
+            <div class="xpanel xpanel-l-t">
+              <div class="title">"社会雷达"感知数据源</div>
+              <div>242141条</div>
+            </div>
+          </div>
+          <div class="xpanel-wrapper xpanel-wrapper-60">
+            <div class="xpanel xpanel-l-b">
+              <div class="title">涉政信息</div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-c">
+          <div class="xpanel-wrapper xpanel-wrapper-70">
+            <div class="xpanel no-bg" style="padding-top: 20px;">
+              <div class="title title-long">事件传播可视化展示</div>
+              <div id="seriesGraph" style="height: 100%"></div>
+            </div>
+          </div>
+          <div class="xpanel-wrapper xpanel-wrapper-30">
+            <div class="xpanel xpanel-c-b">
+              <div class="title title-long">事件发展趋势图</div>
+              <div id="lineChart" style="height: 100%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-r">
+          <div class="xpanel-wrapper xpanel-wrapper-25">
+            <div class="xpanel xpanel-r-t">
+              <div class="title">WA信息关键词云</div>
+            </div>
+          </div>
+          <div class="xpanel-wrapper xpanel-wrapper-30">
+            <div class="xpanel xpanel-r-m">
+              <div class="title">事件影响力趋势图</div>
+              <div id="barChart" style="height: 100%"></div>
+            </div>
+          </div>
+          <div class="xpanel-wrapper xpanel-wrapper-45">
+            <div class="xpanel xpanel-r-b">
+              <div class="title">事件干预效果图</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="js/echarts-3.8.5.min.js"></script>
 		<script type="text/javascript" src="js/dataTool.min.js"></script>
@@ -205,7 +210,9 @@
 					};
 					barChart.setOption(option, true);
 				})();
+
+        $('#datav-loading').fadeOut();
 			});
-		</script>
+    </script>
 	</body>
 </html>
