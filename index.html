@@ -70,17 +70,20 @@
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="js/echarts-3.8.5.min.js"></script>
 		<script type="text/javascript" src="js/dataTool.min.js"></script>
+<!--    <script async src="js/a.js"></script>-->
+<!--    <script defer src="js/b.js"></script>-->
 		<script>
 			$(function() {
 				/*************** 事件传播可视化展示 **************/
 				const seriesGraph = echarts.init(document.getElementById("seriesGraph"));
 				// seriesGraph.showLoading();
-				$.ajax('data/les-miserables.gexf').done(function (xml) {
+				$.ajax('data/Untitled.gexf').done(function (xml) {
 					// seriesGraph.hideLoading();
 
 					const graph = echarts.dataTool.gexf.parse(xml);
+					console.log(graph)
 					const categories = [];
-					for (let i = 0; i < 9; i++) {
+					for (let i = 0; i < 8; i++) {
 						categories[i] = {
 							name: '类目' + i
 						};
