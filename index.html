@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
   <title>WA信息仿真决策支持系统</title>
+  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
 
@@ -106,8 +107,14 @@
         legend: [{
           // selectedMode: 'single',
           data: categories.map(function (a) {
-            return a.name;
-          })
+            return {
+              name: a.name,
+              textStyle: {
+                color: '#fff',
+              },
+            }
+          }),
+          inactiveColor: '#000',
         }],
         animationDuration: 1500,
         animationEasingUpdate: 'quinticInOut',
