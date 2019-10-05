@@ -264,7 +264,7 @@ $(function () {
   /*************** 情感分析结果 **************/
   const pictorialBar = echarts.init(document.getElementById('pictorialBar'));
 
-  const spirit = `image://${location.origin}/ppsuc/img/star.png`;
+  const spirit = `image://${location.origin}/img/star.png`;
 
   (function () {
     const maxData = 5;
