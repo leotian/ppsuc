@@ -23,21 +23,97 @@
   <div class="wrapper">
     <div class="content">
       <div class="col col-l">
-        <div class="xpanel-wrapper xpanel-wrapper-40">
+        <div class="xpanel-wrapper xpanel-wrapper-60">
           <div class="xpanel xpanel-l-t">
             <div class="title">"社会雷达"感知数据源</div>
-            <div>242141条</div>
+            <div class="txtMarquee-data">
+              <div class="total">总量:10000</div>
+              <div class="txtMarquee-top">
+                <div class="hd">境外敌对势力网站</div>
+                <div class="bd">
+                  <ul class="infoList">
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="txtMarquee-top">
+                <div class="hd">境外敌对势力网站</div>
+                <div class="bd">
+                  <ul class="infoList">
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="txtMarquee-top">
+                <div class="hd">境外敌对势力网站</div>
+                <div class="bd">
+                  <ul class="infoList">
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                    <li><span>中国禁文网: 100</span><span class="rightColumn">大纪元: 100</span></li>
+                    <li><span>明镜: 300</span><span class="rightColumn">苹果日报: 100</span></li>
+                    <li><span>看世界: 200</span><span class="rightColumn">看中国: 100</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="classify">
+                <span>图片: 4000</span><span>音视频: 5000</span><span>文本: 6000</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="xpanel-wrapper xpanel-wrapper-60">
+        <div class="xpanel-wrapper xpanel-wrapper-40">
           <div class="xpanel xpanel-l-b">
             <div class="title">涉政信息</div>
+            <div class="title-2">今日共感知到 12345 条 疑似涉政信息</div>
+            <div id="slideBox-politics" class="slideBox" style="height: 40%;">
+              <div class="bd">
+                <ul>
+                  <li>
+                    <div class="politics-title">苹果日报</div>
+                    <div class="politics-date">2019年09月17日</div>
+                    <div class="politics-content">香港警方过度使用暴力，镇压示威市民...</div>
+                  </li>
+                  <li>
+                    <div class="politics-title">西瓜日报</div>
+                    <div class="politics-date">2019年09月18日</div>
+                    <div class="politics-content">111香港警方过度使用暴力，镇压示威市民...</div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+              <a class="prev" href="javascript:void(0)"></a>
+              <a class="next" href="javascript:void(0)"></a>
+            </div>
+            <div class="title-3">威胁等级</div>
+            <div id="pictorialBar" style="height: 20%"></div>
           </div>
         </div>
       </div>
       <div class="col col-c">
-        <div class="xpanel-wrapper xpanel-wrapper-70">
-          <div class="xpanel no-bg" style="padding-top: 20px;">
+        <div class="xpanel-wrapper xpanel-wrapper-10">
+          <div class="incident-title">
+            <div id="first-incident">"七一游行事件"</div>
+            <div id="second-incident">"八一"罢工事件</div>
+            <div id="third-incident">"万人接机"事件</div>
+          </div>
+        </div>
+        <div class="xpanel-wrapper xpanel-wrapper-60">
+          <div class="xpanel no-bg">
             <div class="title title-long">事件传播可视化展示</div>
             <div id="seriesGraph" style="height: 100%"></div>
           </div>
@@ -51,8 +127,23 @@
       </div>
       <div class="col col-r">
         <div class="xpanel-wrapper xpanel-wrapper-25">
-          <div class="xpanel xpanel-r-t">
-            <div class="title">WA信息关键词云</div>
+          <div id="slideBox" class="slideBox">
+            <div class="bd">
+              <ul>
+                <li>
+                  <div id="wordCloud"></div>
+                </li>
+                <li>
+                  <div id="doughnutChart"></div>
+                </li>
+                <li>
+                  <div id="histogram"></div>
+                </li>
+              </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
           </div>
         </div>
         <div class="xpanel-wrapper xpanel-wrapper-30">
@@ -63,7 +154,10 @@
         </div>
         <div class="xpanel-wrapper xpanel-wrapper-45">
           <div class="xpanel xpanel-r-b">
-            <div class="title">事件干预效果图</div>
+            <div class="title">事件干预效果</div>
+            <video src="data/movie.mp4" controls="controls">
+              your browser does not support the video tag
+            </video>
           </div>
         </div>
       </div>
@@ -73,7 +167,9 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/echarts-3.8.5.min.js"></script>
 <script type="text/javascript" src="js/dataTool.min.js"></script>
-<script type="text/javascript" src="js/bundle.js"></script>
-<!--<script type="text/javascript" src="src/main.js"></script>-->
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.3.js"></script>
+<script type="text/javascript" src="js/echarts-wordcloud.js"></script>
+<!--<script type="text/javascript" src="js/bundle.js"></script>-->
+<script type="text/javascript" src="src/main.js"></script>
 </body>
 </html>
