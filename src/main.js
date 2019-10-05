@@ -20,6 +20,11 @@ $(".txtMarquee-top").slide({
   interTime: 50,
 });
 
+$(function() {
+  var deviceWidth = document.documentElement.clientWidth;
+  document.documentElement.style.fontSize = deviceWidth / 100 + 'px';
+})
+
 $(function () {
   /*************** 事件传播可视化展示 **************/
   const seriesGraph = echarts.init(document.getElementById("seriesGraph"));

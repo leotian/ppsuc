@@ -205,6 +205,7 @@ body {
 
 .xpanel-l-t {
   background-image: url("../img/panel-l-t.png");
+  padding-bottom: 2rem;
 }
 
 .xpanel-l-b {
@@ -229,9 +230,9 @@ body {
 
 .xpanel .title {
   /*padding-left:24px;*/
-  height: 44px;
-  line-height: 44px;
-  font-size: 24px;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.35rem;
   font-weight: normal;
   color: #fff;
   background-image: url("../img/title-bg.png");
@@ -243,12 +244,14 @@ body {
 .xpanel .title-2 {
   color: #fff;
   padding: 3%;
+  font-size: 1.1rem;
+  height: 5%;
 }
 
 .xpanel .title-3 {
   color: #fff;
   text-align: center;
-  font-size: 80%;
+  font-size: 1rem;
 }
 
 .xpanel .title-long {
@@ -259,9 +262,9 @@ body {
 @media (max-width: 1919px) {
   .xpanel .title {
     /*padding-left: 20px;*/
-    height: 36px;
-    line-height: 36px;
-    font-size: 20px;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -324,6 +327,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
+  margin-top: 8%;
 }
 
 .slideBox .bd .politics-title {
@@ -387,29 +391,55 @@ body {
 }
 
 .txtMarquee-data {
-  font: normal 12px/22px 宋体;
-  color: #fff
+  height: 100%;
+  font: normal 1rem/1.5rem 宋体;
+  color: #fff;
+  position: relative;
+}
+
+.txtMarquee-data .total {
+  height: 9%;
+  padding: 2%;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.txtMarquee-data .classify {
+  height: 6%;
+  text-align: center;
 }
 
 .txtMarquee-data .classify span {
-  padding: 0 2%;
-  margin: 0 5%;
-  border: 2px solid #000;
+  padding: 0 1%;
+  margin: 0 2%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.txtMarquee-top-wrapper {
+  height: 85%;
 }
 
 .txtMarquee-top {
   width: 100%;
+  height: 33%;
   overflow: hidden;
   position: relative;
 }
 
 .txtMarquee-top .hd {
+  height: 20%;
   font-weight: 500;
   padding: 0 10px;
 }
 
 .txtMarquee-top .bd {
-  padding: 1% 5%;
+  padding: 2% 5% 1%;
+  height: 70%;
+}
+
+.txtMarquee-top .bd .tempWrap {
+  height: 90%
 }
 
 .txtMarquee-top .infoList li {
