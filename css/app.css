@@ -96,9 +96,9 @@ body {
 }
 
 .col-c {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
 }
 
 .col-r {
@@ -144,6 +144,10 @@ body {
   height: 100%;
 }
 
+.xpanel-wrapper-5 {
+  height: 5%;
+}
+
 .xpanel-wrapper-10 {
   height: 10%;
 }
@@ -156,12 +160,24 @@ body {
   height: 30%;
 }
 
+.xpanel-wrapper-35 {
+  height: 35%;
+}
+
 .xpanel-wrapper-40 {
   height: 40%;
 }
 
 .xpanel-wrapper-45 {
   height: 45%;
+}
+
+.xpanel-wrapper-50 {
+  height: 50%;
+}
+
+.xpanel-wrapper-55 {
+  height: 55%;
 }
 
 .xpanel-wrapper-60 {
@@ -174,14 +190,6 @@ body {
 
 .xpanel-wrapper-75 {
   height: 75%;
-}
-
-.xpanel-wrapper .incident-title {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 4% 0;
 }
 
 .xpanel-wrapper .incident-title * {
@@ -228,6 +236,13 @@ body {
   background-image: url("../img/panel-r-b.png");
 }
 
+.xpanel-r-b video {
+  width: 100%;
+  height: 90%;
+  object-fit: fill;
+  margin: 0 auto;
+}
+
 .xpanel .title {
   /*padding-left:24px;*/
   height: 2rem;
@@ -246,12 +261,6 @@ body {
   padding: 3%;
   font-size: 1.1rem;
   height: 5%;
-}
-
-.xpanel .title-3 {
-  color: #fff;
-  text-align: center;
-  font-size: 1rem;
 }
 
 .xpanel .title-long {
@@ -327,17 +336,29 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 8%;
+}
+
+#slideBox-politics {
+  height: 75%;
+  padding: 1rem 0;
+}
+
+#slideBox-politics .prev {
+  top: 30%;
+}
+
+#slideBox-politics .next {
+  top: 30%;
 }
 
 .slideBox .bd .politics-title {
-  height: 20%;
+  height: 10%;
   color: #008000;
   text-align: center;
 }
 
 .slideBox .bd .politics-date {
-  height: 20%;
+  height: 10%;
   color: #fff;
   text-align: center;
 }
@@ -350,9 +371,35 @@ body {
   text-align: center;
 }
 
+.slideBox .bd .politics-button {
+  width: 100%;
+  height: 25%;
+  text-align: center;
+}
+
+.slideBox .bd .politics-button button {
+  width: 25%;
+  height: 60%;
+  font-size: .5rem;
+  background: #cecece;
+  color: #000;
+  border-radius: 1rem;
+  outline:none;
+}
+
+.slideBox .bd .politics-star {
+  width: 100%;
+  height: 10%;
+}
+
+.slideBox .bd .politics-star h3 {
+  color: #fff;
+  text-align: center;
+}
+
 .slideBox .bd {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .slideBox .bd * {
@@ -398,37 +445,38 @@ body {
 }
 
 .txtMarquee-data .total {
-  height: 9%;
-  padding: 2%;
+  height: 10%;
+  padding: 3%;
   font-size: 1.1rem;
   box-sizing: border-box;
 }
 
 .txtMarquee-data .classify {
-  height: 6%;
+  height: 10%;
+  padding: .5rem 0;
   text-align: center;
 }
 
 .txtMarquee-data .classify span {
   padding: 0 1%;
-  margin: 0 2%;
+  margin: 0 1%;
   border: 2px solid #fff;
   border-radius: 5px;
 }
 
 .txtMarquee-top-wrapper {
-  height: 85%;
+  height: 80%;
 }
 
 .txtMarquee-top {
   width: 100%;
-  height: 33%;
+  height: 80%;
   overflow: hidden;
   position: relative;
 }
 
 .txtMarquee-top .hd {
-  height: 20%;
+  height: 10%;
   font-weight: 500;
   padding: 0 10px;
 }
@@ -451,3 +499,34 @@ body {
   float: right;
 }
 
+.txtMarquee-top-two {
+  height: 10%;
+}
+
+.txtMarquee-top-two .hd {
+  height: 100%;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.txtMarquee-top-three {
+  height: 10%;
+}
+
+.txtMarquee-top-three .hd {
+  height: 100%;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.star-point {
+  padding: 1rem 0;
+  text-align: center;
+  color: #FFCE5C;
+  font-size: 2rem;
+}
+
+.line-clamp {
+  height: 6rem;
+  overflow: scroll;
+}
